@@ -1,16 +1,18 @@
 # Sistema de Atendimento Inteligente para Clínicas Médicas
 
-## Sobre o Projeto
+## 📖 Sobre o Projeto
 
-Este projeto é uma aplicação web desenvolvida para modernizar e otimizar o processo de agendamento de consultas em clínicas médicas. A solução visa substituir métodos manuais por um sistema digital, melhorando a experiência de pacientes e administradores.
+Este projeto é uma aplicação web full-stack desenvolvida para modernizar e otimizar o processo de agendamento de consultas em clínicas médicas de pequeno porte. A solução visa substituir processos manuais por um sistema digital, seguro e eficiente, melhorando a experiência tanto para pacientes quanto para a administração da clínica.
 
 A plataforma conta com um sistema de autenticação, painéis de controle distintos para pacientes e secretariado, e integrações com APIs externas para enriquecer a experiência do usuário, como a busca automática de endereço por CEP e a exibição da previsão do tempo para o dia da consulta.
 
+Este repositório contém todo o código-fonte, dividido entre as pastas `backend` e `frontend`.
+
 ---
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-O projeto foi baseado em JavaScript, tanto no frontend quanto no backend.
+O projeto foi construído utilizando um ecossistema moderno baseado em JavaScript, tanto no frontend quanto no backend.
 
 #### **Backend**
 * **Node.js:** Ambiente de execução do JavaScript no servidor.
@@ -44,14 +46,14 @@ Siga os passos abaixo para executar o projeto em seu ambiente local.
 ### **1. Configuração do Backend**
 
 ```bash
-# 1. Clone o repositório e navegue até a pasta do backend
-cd projeto-clinica-novo/backend
+# 1. Clone este repositório e navegue até a pasta do backend
+git clone [https://github.com/sneedelicious/projeto-clinica-web.git](https://github.com/sneedelicious/projeto-clinica-web.git)
+cd projeto-clinica-web/backend
 
 # 2. Instale as dependências
 npm install
 
-# 3. Crie um arquivo .env na raiz da pasta /backend
-#    Preencha com suas chaves, conforme o exemplo abaixo:
+# 3. Crie um arquivo .env na raiz da pasta /backend e preencha com suas chaves
 ```
 
 **Arquivo `backend/.env`:**
@@ -72,7 +74,7 @@ node server.js
 
 ```bash
 # 1. Abra um novo terminal e navegue até a pasta do frontend
-cd projeto-clinica-novo/frontend
+cd projeto-clinica-web/frontend
 
 # 2. Instale as dependências
 npm install
@@ -80,9 +82,22 @@ npm install
 # 3. Inicie o servidor de desenvolvimento do Vue
 npm run serve
 ```
-> A aplicação estará acessível em `http://localhost:8080` (ou outra porta indicada no terminal).
+> A aplicação estará acessível em `http://localhost:8080`.
 
+---
+
+## 🌐 Deploy
+
+A aplicação foi implantada e pode ser acessada através dos seguintes links:
+
+* **Frontend (Aplicação Web):** `https://projeto-clinica-web.vercel.app/`
+* **Backend (API):** `https://clinica-api-sergio.onrender.com`
+
+---
 
 ## 👨‍💻 Autor
 
 **Sérgio Martins Filho**
+
+* **GitHub:** [sneedelicious](https://github.com/sneedelicious)
+
