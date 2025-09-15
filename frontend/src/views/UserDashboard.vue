@@ -80,7 +80,7 @@ export default {
         const token = this.$store.state.token;
         if (!token) return;
 
-        const response = await axios.get('http://localhost:5000/api/appointments', {
+        const response = await axios.get('/api/appointments', {
           headers: { 'x-auth-token': token }
         });
         this.appointments = response.data;

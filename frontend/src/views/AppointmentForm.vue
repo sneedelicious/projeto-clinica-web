@@ -73,7 +73,7 @@ export default {
     async fetchAddress(cep) {
       try {
         // Chama a nova rota que criamos no backend
-        const response = await axios.get(`http://localhost:5000/api/cep/${cep}`);
+        const response = await axios.get(`/api/cep/${cep}`);
         const { street, city, state } = response.data;
         // Preenche o campo de endereço automaticamente
         this.address = `${street}, ${city} - ${state}`;
@@ -97,7 +97,7 @@ export default {
         }
 
         // Agora o 'zipCode' já está no formato correto no 'data'
-        const response = await axios.post('http://localhost:5000/api/appointments', {
+        const response = await axios.post('/api/appointments', {
           date: this.date,
           description: this.description,
           zipCode: this.zipCode.replace(/\D/g, '') // Envia o CEP limpo
